@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple, responsive calculator with persistent history, built using pure HTML, CSS, and Vanilla JavaScript.">
+    <meta name="keywords" content="calculator, javascript, html, css, vanilla js, simple calculator, history calculator, web app">
+    <meta name="author" content="Shahid Khan">
+    <title>Simple Calculator with History | JS Project</title>
+
+    <meta property="og:title" content="Simple Calculator with History">
+    <meta property="og:description" content="A modern, responsive calculator web app with persistent calculation history and dark/light mode toggle.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Calculator</h1>
+        <button id="theme-toggle">Dark</button>
+    </header>
+
+    <main class="calculator-container">
+        <section class="calculator">
+            <div class="display">
+                <div id="previous-operand" class="previous-operand"></div>
+                <div id="current-operand" class="current-operand">0</div>
+            </div>
+            
+            <div class="buttons">
+                <button data-action="clear" class="span-two">C</button>
+                <button data-action="delete"></button>
+                <button data-operator="divide">÷</button>
+                
+                <button data-number>7</button>
+                <button data-number>8</button>
+                <button data-number>9</button>
+                <button data-operator="multiply">×</button>
+                
+                <button data-number>4</button>
+                <button data-number>5</button>
+                <button data-number>6</button>
+                <button data-operator="subtract">−</button>
+
+                <button data-number>1</button>
+                <button data-number>2</button>
+                <button data-number>3</button>
+                <button data-operator="add">+</button>
+
+                <button data-number class="span-two">0</button>
+                <button data-number>.</button>
+                <button data-action="equals" class="equals-btn">=</button>
+            </div>
+        </section>
+
+        <section class="history-panel">
+            <h2>History</h2>
+            <div id="history-list" class="history-list">
+                <p class="history-empty">No calculations yet.</p>
+            </div>
+            <button id="clear-history-btn" class="clear-history-btn" disabled>Clear History</button>
+        </section>
+    </main>
+
+   <footer>
+  <div class="footer-container">
+    <p>© 2025 Shahid Khan | Built with HTML, CSS & JS only</p>
+    
+    <div class="footer-contact">
+      <p>Email: <a href="mailto:shahidkhan.prog@gmail.com">shahidkhan.prog@gmail.com</a></p>
+      <p>Phone: <a href="tel:+923449885555">+92 344 988 5555</a></p>
+    </div>
+    
+    <div class="footer-social">
+      <a href="https://github.com/shahidkhanprog" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/shahidkhanprog/" target="_blank">LinkedIn</a> |
+      <a href="https://wa.me/923449885555" target="_blank">WhatsApp</a> |
+      <a href="https://skhan-portfolio.vercel.app/" target="_blank">Portfolio</a>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>
